@@ -41,6 +41,7 @@ async def create_storage() -> None:
     Создает директории.
     """
     await create_storage_telegram()
+    await create_storage_images()
 
 async def create_storage_telegram() -> None:
     """
