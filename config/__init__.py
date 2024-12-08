@@ -13,6 +13,16 @@ def load_config():
         raise ValueError("В конфиге [token] должна быть опция api_key")
     
     token = config.get("token", "api_key")
-    return token
+    telegram_token = config.get("telegram", "token")
+    telegram_password = config.get("telegram", "password")
+    read_chats = config.get("other", "read_chats")
+    return token, telegram_token, telegram_password, read_chats
 
-token = load_config()
+class Settings:
+    def __init__(self, token, telegram_token, telegram_password, read_chats):
+        self.token = token
+        self.telegram_token = telegram_token
+        self.telegram_password = telegram_password
+        self.read_chats = read_chats
+
+SETTINGS = Settings(*load_config())

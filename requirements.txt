@@ -1,0 +1,4 @@
+faker
+curl_cffi
+loguru
+aiogram
