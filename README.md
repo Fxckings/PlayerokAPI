@@ -4,7 +4,7 @@
 
 ## 🔧 Быстрый Старт
 Если не зарегистрированы, зарегистрируйтесь:
-https://playerok.com/?invite=Aslxqwe
+<a href="https://playerok.com/?invite=Aslxqwe">https://playerok.com</a>
 
 Откройте файл ```config/_main.cfg```
 
